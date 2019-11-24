@@ -37,65 +37,81 @@
       </div>
 
       <section class="gallery">
-        <header class="advantages__header">
-          <h2 class="advantages__slogan">Фото и видео</h2>
-          <p class="advantages__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <header class="gallery__header">
+          <h2 class="gallery__slogan">Фото и видео</h2>
+          <p class="gallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
 
         <div class="photo-gallery">
           <ul class="photo-gallery__list">
             <li class="photo-gallery__item">
-              <figure>
-                <img src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="неродные просторы" alt="неродные просторы">
-                <figcaption>неродные просторы</figcaption>
+              <figure class="photo-gallery__shape">
+                <img class="photo-gallery__photo-image" src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="неродные просторы" alt="неродные просторы">
+                <figcaption class="photo-gallery__caption">неродные просторы</figcaption>
               </figure>
-              <cite>Автор фото: Борис</cite>
-              <img src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+              <div class="photo-gallery__socials">
+                <cite class="photo-gallery__sign">Автор фото: Борис</cite>
+                <a class="photo-gallery__link" href="#">
+                  <img class="photo-gallery__icon" src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+                </a>
+              </div>
             </li>
             <li class="photo-gallery__item">
-              <figure>
-                <img src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="местная растительность" alt="местная растительность">
-                <figcaption>местная растительность</figcaption>
+              <figure class="photo-gallery__shape">
+                <img class="photo-gallery__photo-image" src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="местная растительность" alt="местная растительность">
+                <figcaption class="photo-gallery__caption">местная растительность</figcaption>
               </figure>
-              <cite>Автор фото: Сергей</cite>
-              <img src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+              <div class="photo-gallery__socials">
+                <cite class="photo-gallery__sign">Автор фото: Сергей</cite>
+                <a class="photo-gallery__link" href="#">
+                  <img class="photo-gallery__icon" src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+                </a>
+              </div>
             </li>
             <li class="photo-gallery__item">
-              <figure>
-                <img src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="дорога на север" alt="дорога на север">
-                <figcaption>дорога на север</figcaption>
+              <figure class="photo-gallery__shape">
+                <img class="photo-gallery__photo-image" src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="дорога на север" alt="дорога на север">
+                <figcaption class="photo-gallery__caption">дорога на север</figcaption>
               </figure>
-              <cite>Автор фото: Петр</cite>
-              <img src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+              <div class="photo-gallery__socials">
+                <cite class="photo-gallery__sign">Автор фото: Петр</cite>
+                <a class="photo-gallery__link" href="#">
+                  <img class="photo-gallery__icon" src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+                </a>
+              </div>
             </li>
             <li class="photo-gallery__item">
-              <figure>
-                <img src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="мост дьвола" alt="мост дьвола">
-                <figcaption>мост дьявола</figcaption>
+              <figure class="photo-gallery__shape">
+                <img class="photo-gallery__photo-image" src="https://via.placeholder.com/280x280" width="280" height="280" aria-label="мост дьявола" alt="мост дьявола">
+                <figcaption class="photo-gallery__caption">мост дьявола</figcaption>
               </figure>
-              <cite>Автор фото: Антон</cite>
-              <img src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+              <div class="photo-gallery__socials">
+                <cite class="photo-gallery__sign">Автор фото: Антон</cite>
+                <a class="photo-gallery__link" href="#">
+                  <img class="photo-gallery__icon" src="https://via.placeholder.com/23x21" width="23" height="21" aria-label="лайк" alt="лайк">
+                </a>
+              </div>
             </li>
           </ul>
         </div>
 
         <div class="video-gallery">
-          <header class="advantages__header">
+          <header class="video-gallery__header">
             <h2 class="visually-hidden">Видео галерея</h2>
-            <b class="advantages__slogan">Все еще сомневаетесь?</b>
-            <p class="advantages__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <b class="video-gallery__slogan">Все еще сомневаетесь?</b>
+            <p class="video-gallery__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </header>
-          <video class="video" src="#" fullscreen="fullscreen" controls preload="metadata" loop width="320" height="201" poster="https://via.placeholder.com/320x201">
+          <video class="video" controls preload="metadata" loop width="320" height="201" poster="https://via.placeholder.com/320x201">
             <track src="#" label="русские субтитры" kind="subtitles" srclang="ru">
-            <source type="video/mp4" src="#">
-            <source type="video/ogg" src="#">
-            <source type="video/webm" src="#">
+            <source src="#" type="video/mp4">
+            <source src="#" type="video/ogg">
+            <source src="#" type="video/webm">
           </video>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <section class="socials">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <p class="socials__hashtag">#visitsedona</p>
