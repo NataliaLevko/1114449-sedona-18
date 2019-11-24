@@ -2,11 +2,137 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона - небольшой городок в Аризоне</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrap">
+          <ul class="main-nav__list list-menu">
+            <li class="list-menu__item list-menu__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="list-menu__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="list-menu__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="list-menu__item list-menu__item--shadow">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" aria-label="логотип седона" alt="логотип седона">
+      </a>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
+      <div class="main-photo main-photo--big">
+        <h2 class="main-photo__title">Седона</h2>
+      </div>
+
+      <section class="advantages">
+        <header class="advantages__header">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <b class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </header>
+        <ul class="advantages__list list-menu">
+          <li class="list-menu__item list-menu__item--blue list-menu__item--big">
+            <h3 class="list-menu__title">Настоящий городок</h3>
+            <b class="list-menu__number">- №1 -</b>
+            <p class="list-menu__slogan">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="list-menu__photo-image" src="https://via.placeholder.com/320x260" width="320" height="260" alt="настоящий городок Седона" aria-label="настоящий городок Седона">
+
+            <ul class="offers">
+              <li class="offers__item offers__item--home">
+                <h4 class="offers__title">Жилье</h4>
+                <p class="offers__slogan">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="offers__item  offers__item--gifts">
+                <h4 class="offers__title">Сувениры</h4>
+                <p class="offers__slogan">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="offers__item offers__item--food">
+                <h4 class="offers__title">Еда</h4>
+                <p class="offers__slogan">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+
+          </li>
+          <li class="list-menu__item list-menu__item--blue list-menu__item--small">
+            <h3 class="list-menu__title">Там есть мост дьявола</h3>
+            <b class="list-menu__number">- №2 -</b>
+            <p class="list-menu__slogan">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="list-menu__photo-image" src="https://via.placeholder.com/320x260" width="320" height="260" alt="мост дьявола" aria-label="мост дьявола">
+          </li>
+          <li class="list-menu__item list-menu__item--grey">
+            <h3 class="list-menu__title">Небольшая площадь</h3>
+            <b class="list-menu__number">- №3 -</b>
+            <p class="list-menu__slogan">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="list-menu__item list-menu__item--grey list-menu__item--border">
+            <h3 class="list-menu__title">Красивая дорога</h3>
+            <b class="list-menu__title">- №4 -</b>
+            <p class="list-menu__title">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="list-menu__item list-menu__item--grey">
+            <h3 class="list-menu__title">Мало туристов</h3>
+            <b class="list-menu__number">- №5 -</b>
+            <p class="list-menu__slogan">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="booking">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <b class="booking__title">Заинтересовались?</b>
+        <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="booking__link link__blue" href="#">Найти гостиницу</a>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Наше местоположение</h2>
+        <img class="map__photo" src="https://via.placeholder.com/320x350" width="320" height="350" alt="наше местоположение на карте штата Америки" aria-label="наше местоположение на карте штата Америки">
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <section class="socials">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <p class="socials__hashtag">#visitsedona</p>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#" rel="nofollow noreferrer noopener" target="_blank" aria-label="наша группа в твиттере" title="Наш Твиттер">
+              <img class="socials__icon" src="https://via.placeholder.com/18x14" width="18" height="14" alt="иконка твиттера" aria-label="иконка твиттера">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" rel="nofollow noreferrer noopener" target="_blank" aria-label="наша группа в фейсбуке" title="Наш фейсбук">
+              <img class="socials__icon" src="https://via.placeholder.com/9x18" width="9" height="18" alt="иконка фейсбука" aria-label="иконка фейсбука">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" rel="nofollow noreferrer noopener" target="_blank" aria-label="наш канал на ютубе" title="наш канал на ютубе">
+              <img class="socials__icon" src="https://via.placeholder.com/20x14" width="20" height="14" alt="иконка ютуб" aria-label="иконка ютуб">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="develop">
+        <p class="develop__text">Разработано</p>
+        <a class="develop__link" href="https://htmlacademy.ru/intensive/adaptive" rel="nofollow noreferrer noopener" target="_blank" aria-label="разработчик сайта htmlacademy">
+          <img class="develop__photo-image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="логотип разработчика сайта" aria-label="логотип разработчика сайта">
+        </a>
+      </div>
+    </footer>
 
   </body>
 </html>
