@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наталья Левко](https://up.htmlacademy.ru/adaptive/18/user/1114449).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Пушкарев](https://htmlacademy.ru/profile/id87167).
 
 ---
 
