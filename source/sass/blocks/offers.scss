@@ -1,5 +1,3 @@
-$bg-blue: #81b3d2;
-
 /*.offers__item--food {
   background: $bg-blue url(/img/icon-burger.svg) no-repeat;
 }*/
@@ -7,9 +5,13 @@ $bg-blue: #81b3d2;
 .offers {
   list-style: none;
   display: flex;
-  flex-direction: column;
   padding-left: 0;
   position: relative;
+  background-color: $bg-white;
+}
+
+.list-offers {
+  flex-direction: column;
 }
 
 .offers__item--food::before {

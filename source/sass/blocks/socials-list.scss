@@ -1,0 +1,17 @@
+.socials-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.socials-list__item {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  background-color: $bg-blue;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+}

@@ -1,17 +1,13 @@
+@import "variables";
 @import "blocks/main-nav";
 @import "blocks/offers";
 @import "blocks/booking";
 @import "blocks/socials";
+@import "blocks/advantages";
+@import "blocks/page-footer";
+@import "blocks/socials-list";
+@import "blocks/develop";
 
-$basic-font: "PT Sans", "Arial", sans-serif;
-$biggest-size: 1.6em;   /*26px*/
-$big-size: 1.3em;       /*21px*/
-$middle-size: 0.875em;  /*14px*/
-$bg-black: #000000;
-$bg-white: #ffffff;
-$bg-grey: #333333;
-$bg-blue: #81b3d2;
-$bold: bold;
 
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
@@ -28,4 +24,10 @@ $bold: bold;
 
 body {
   background-color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }

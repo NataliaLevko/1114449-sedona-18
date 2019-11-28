@@ -1,0 +1,15 @@
+.develop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.develop__text {
+  font-family: $basic-font;
+  font-size: $middle-size;
+  line-height: $biggest-size;
+  font-style: normal;
+  font-weight: normal;
+  color: $bg-black;
+  text-transform: uppercase;
+}

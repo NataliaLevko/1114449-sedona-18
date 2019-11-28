@@ -1,0 +1,56 @@
+.list-menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.advantages__list {
+  flex-direction: column;
+}
+
+.list-menu__title {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: $biggest-size;
+  font-weight: $bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.list-menu__number,
+.list-menu__slogan {
+  font-family: $basic-font;
+  font-size: $middle-size;
+  line-height: $big-size;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.list-menu__item--blue {
+  background-color: $bg-blue;
+
+  .list-menu__title,
+  .list-menu__number,
+  .list-menu__slogan {
+    color: $bg-white;
+  }
+}
+
+.list-menu__item--grey {
+  background-color: $bg-lightgrey;
+
+  .list-menu__title {
+    color: $bg-black;
+  }
+  .list-menu__number,
+  .list-menu__slogan {
+    color: $bg-grey;
+  }
+}
+
+.list-menu__item--border {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+
+}

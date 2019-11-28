@@ -1,27 +1,31 @@
-$basic-font: "PT Sans", "Arial", sans-serif;
-$biggest-size: 1.6em;   /*26px*/
-$big-size: 1.3em;       /*21px*/
-$middle-size: 0.875em;  /*14px*/
-$bg-black: #000000;
-$bg-white: #ffffff;
-$bg-grey: #333333;
-$bg-blue: #81b3d2;
-$bold: bold;
-
-
 .main-nav__toggle {
   background-color: transparent;
+  background-image: url(/img/icon-menu.svg);
+  width: 22.928px;
+  height: 21.982px;
+  border: none;
+}
+
+.main-nav__wrap {
+  width: 320px;
 }
 
 .list-top-menu {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
 }
 
 .main-nav__list {
   flex-direction: column;
 }
+
+.list-top-menu__item {
+  background-color: $bg-blue;
+}
+
 
 .list-top-menu__link {
   font-family: $basic-font;
@@ -30,7 +34,11 @@ $bold: bold;
   font-weight: $bold;
   font-style: normal;
   color: $bg-white;
-  background-color: $bg-blue;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  text-align: center;
+
 }
