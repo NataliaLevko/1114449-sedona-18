@@ -1,0 +1,31 @@
+@import "blocks/main-nav";
+@import "blocks/offers";
+@import "blocks/booking";
+@import "blocks/socials";
+
+$basic-font: "PT Sans", "Arial", sans-serif;
+$biggest-size: 1.6em;   /*26px*/
+$big-size: 1.3em;       /*21px*/
+$middle-size: 0.875em;  /*14px*/
+$bg-black: #000000;
+$bg-white: #ffffff;
+$bg-grey: #333333;
+$bg-blue: #81b3d2;
+$bold: bold;
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0px;
+	padding: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	clip-path: inset(100%);
+}
+
+body {
+  background-color: #ffffff;
+}

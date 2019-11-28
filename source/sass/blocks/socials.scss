@@ -1,0 +1,26 @@
+$basic-font: "PT Sans", "Arial", sans-serif;
+$biggest-size: 1.6em;
+$big-size: 1.3em;
+$middle-size: 0.875em;
+$bg-black: #000000;
+$bg-white: #ffffff;
+$bg-grey: #333333;
+$bg-blue: #81b3d2;
+$bold: bold;
+
+.socials__hashtag {
+  font-family: $basic-font;
+  font-size: $big-size;
+  font-weight: $bold;
+  line-height: $biggest-size;
+  color: $bg-black;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.socials__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}

@@ -1,0 +1,20 @@
+$bg-blue: #81b3d2;
+
+/*.offers__item--food {
+  background: $bg-blue url(/img/icon-burger.svg) no-repeat;
+}*/
+
+.offers {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  position: relative;
+}
+
+.offers__item--food::before {
+  content: url(/img/icon-burger.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

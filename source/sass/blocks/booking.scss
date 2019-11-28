@@ -1,0 +1,44 @@
+$basic-font: "PT Sans", "Arial", sans-serif;
+$biggest-size: 1.6em;
+$big-size: 1.3em;
+$middle-size: 0.875em;
+$bg-black: #000000;
+$bg-white: #ffffff;
+$bg-grey: #333333;
+$bg-blue: #81b3d2;
+$bold: bold;
+
+.booking__title {
+  font-family: $basic-font;
+  font-size: $big-size;
+  line-height: $biggest-size;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $bg-black;
+}
+
+.booking__text {
+  font-family: $basic-font;
+  font-size: $middle-size;
+  text-transform: uppercase;
+  color: $bg-grey;
+}
+
+.booking__link {
+  width: 280px;
+}
+
+.link-blue {
+  background-color: $bg-blue;
+  display: block;
+  color: $bg-white;
+  font-family: $basic-font;
+  font-size: $big-size;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
