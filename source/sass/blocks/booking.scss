@@ -1,34 +1,37 @@
+.booking {
+  text-align: center;
+  padding-top: 28px;
+}
+
 .booking__title {
   font-family: $basic-font;
-  font-size: $big-size;
-  line-height: $biggest-size;
-  font-weight: $bold;
-  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
   color: $bg-black;
+  text-transform: uppercase;
 }
 
 .booking__text {
   font-family: $basic-font;
-  font-size: $middle-size;
-  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
   color: $bg-grey;
+  text-transform: uppercase;
+  width: 261px;
+  padding-left: 30px;
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
+.booking__block {
+  padding-left: 20px;
+  margin-bottom: 49px;
 }
 
 .booking__link {
   width: 280px;
-}
-
-.link-blue {
-  background-color: $bg-blue;
-  display: block;
-  color: $bg-white;
-  font-family: $basic-font;
-  font-size: $big-size;
-  font-weight: bold;
-  line-height: 1.6em;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
 }

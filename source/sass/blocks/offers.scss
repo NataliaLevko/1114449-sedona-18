@@ -1,22 +1,56 @@
-/*.offers__item--food {
-  background: $bg-blue url(/img/icon-burger.svg) no-repeat;
-}*/
-
 .offers {
   list-style: none;
-  display: flex;
+  padding-top: 34px;
   padding-left: 0;
-  position: relative;
+  padding-bottom: 9px;
+  text-align: center;
+  text-transform: uppercase;
   background-color: $bg-white;
 }
 
-.list-offers {
-  flex-direction: column;
+.offers__item {
+  position: relative;
+  text-align: left;
+  margin-bottom: 28px;
 }
 
-.offers__item--food::before {
-  content: url(/img/icon-burger.svg);
+.offers__title {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+  display: inline;
+  padding-left: 70px;
+}
+
+.offers__slogan {
+  width: 210px;
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: $bg-grey;
+  padding-left: 70px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.offers__photo {
+  fill: $bg-blue;
   position: absolute;
-  top: 0;
-  left: 0;
+  &--home {
+    left: 22px;
+    top: -9px;
+  }
+  &--gift {
+    left: 25.5px;
+    top: -11px;
+  }
+  &--food {
+    left: 18px;
+    top: -5px;
+  }
 }

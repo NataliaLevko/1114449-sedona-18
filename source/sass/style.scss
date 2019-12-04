@@ -1,33 +1,16 @@
+@import "normalize.scss";
 @import "variables";
+@import "blocks/global";
 @import "blocks/main-nav";
 @import "blocks/offers";
 @import "blocks/booking";
 @import "blocks/socials";
 @import "blocks/advantages";
-@import "blocks/page-footer";
 @import "blocks/socials-list";
 @import "blocks/develop";
-
-
-.visually-hidden:not(:focus):not(:active) {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0px;
-	padding: 0px;
-	overflow: hidden;
-	white-space: nowrap;
-	clip-path: inset(100%);
-}
-
-body {
-  background-color: #ffffff;
-  margin: 0;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
+@import "blocks/list-menu";
+@import "blocks/list-top-menu";
+@import "blocks/map";
+@import "blocks/link-blue";
+@import "blocks/main-photo";
+@import "blocks/page-header";

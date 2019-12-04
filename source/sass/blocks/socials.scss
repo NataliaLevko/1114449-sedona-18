@@ -1,9 +1,15 @@
+.socials {
+  text-align: center;
+}
+
 .socials__hashtag {
   font-family: $basic-font;
-  font-size: $big-size;
-  font-weight: $bold;
-  line-height: $biggest-size;
-  color: $bg-black;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   font-style: normal;
+  color: $bg-black;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 38px;
 }
