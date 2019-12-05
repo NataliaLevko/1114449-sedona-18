@@ -1,0 +1,27 @@
+.video-gallery__header {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.video-gallery__slogan {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+  text-transform: uppercase;
+}
+
+.video-gallery__intro {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  color: $bg-grey;
+  text-transform: uppercase;
+  width: 236px;
+  margin-top: 27px;
+  margin-bottom: 34px;
+}

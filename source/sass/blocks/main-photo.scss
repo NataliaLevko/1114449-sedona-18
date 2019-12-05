@@ -2,18 +2,28 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: $bg-blue;
   background-repeat: no-repeat;
-  background-position: center 0;
   position: relative;
   margin-top: 56px;
 
   &--big {
     height: 389px;
+    background-position: center 0;
+  }
+  &--small {
+    height: 158px;
+    background-position: center 100%;
   }
 }
 
-.main-photo__pattern {
+.main-photo__pattern-index {
   position: absolute;
   top: 363.9px;
+  left: 0;
+}
+
+.main-photo__pattern-inner {
+  position: absolute;
+  top: 131.9px;
   left: 0;
 }
 
@@ -21,4 +31,10 @@
   position: absolute;
   top: 91px;
   left: 19px;
+}
+
+.main-photo__text-sedona {
+  position: absolute;
+  top: 52px;
+  left: 45px;
 }
