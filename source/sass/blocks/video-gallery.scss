@@ -25,16 +25,16 @@
   font-style: normal;
   color: $bg-grey;
   text-transform: uppercase;
-  width: 236px;
   margin-top: 27px;
   margin-bottom: 34px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .video-gallery__wrap {
   position: relative;
-  background-image: url("../img/video-mobile@1x.jpg");
-  width: 320px;
-  height: 201px;
+  display: flex;
+  justify-content: center;
 }
 
 .video-gallery__progress-bar {
@@ -66,29 +66,36 @@
 }
 
 .video-gallery__controls {
+  display: flex;
+  justify-content: center;
   background-color: #f2f2f2;
   width: 280px;
   height: 66px;
-  position: relative;
+  padding-top: 4px;
+  padding-right: 23px;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 
-.video-gallery__replay {
-  fill: #5c6870;
-  position: absolute;
-  top: 23px;
-  left: 25px;
+.video-gallery__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &--replay {
+    margin-left: 0;
+  }
+
+  &--subtitles {
+    margin-right: 31px;
+    margin-left: auto;
+  }
+
+  &--fullscreen {
+    margin-right: 0;
+  }
 }
 
-.video-gallery__subtitles {
+.video-gallery__icon {
   fill: #5c6870;
-  position: absolute;
-  top: 24px;
-  right: 74px;
-}
-
-.video-gallery__fullscreen {
-  fill: #5c6870;
-  position: absolute;
-  top: 24px;
-  right: 23px;
 }

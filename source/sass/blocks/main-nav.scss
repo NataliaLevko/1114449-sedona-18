@@ -1,27 +1,13 @@
 .main-nav__btn {
   background-color: transparent;
   border: none;
-
-  &--reset {
-    position: absolute;
-    top: 16px;
-    right: 14px;
-  }
-
-  &--toggle {
-    position: absolute;
-    top: 239px;
-    right: 14px;
-  }
+  position: absolute;
+  top: 16px;
+  right: 14px;
 }
 
 .main-nav__icon {
-  &--on {
-    fill: $bg-blue;
-  }
-  &--off {
-    fill: $bg-white;
-  }
+  fill: $bg-white;
 }
 
 .main-nav__list {
