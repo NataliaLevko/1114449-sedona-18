@@ -14,15 +14,6 @@
             <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
           </svg>
         </button>
-        <button class="main-nav__btn main-nav__btn--toggle" type="button" aria-label="Открыть меню">
-          <svg class="main-nav__icon main-nav__icon--on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-            <g>
-              <rect width="22.928" height="3.964"/>
-              <rect y="9.009" width="22.928" height="3.964"/>
-              <rect y="18.018" width="22.928" height="3.964"/>
-            </g>
-          </svg>
-        </button>
         <div class="main-nav__wrap">
           <ul class="main-nav__list list-top-menu">
             <li class="list-top-menu__item list-top-menu__item--active">
@@ -40,10 +31,19 @@
           </ul>
         </div>
       </nav>
-      <div class="page-header__logo">
+      <div class="page-header__wrap">
         <a class="page-header__link">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" aria-label="логотип седона" alt="логотип седона">
         </a>
+        <button class="page-header__btn" type="button" aria-label="Открыть меню">
+          <svg class="page-header__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964"/>
+              <rect y="9.009" width="22.928" height="3.964"/>
+              <rect y="18.018" width="22.928" height="3.964"/>
+            </g>
+          </svg>
+        </button>
       </div>
 
     </header>
@@ -61,46 +61,59 @@
         <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="reviews-form__block reviews-form__block--full-name">
             <legend class="reviews-form__title">Представьтесь:</legend>
-            <ul class="reviews-form__list reviews-form__list--center">
+            <ul class="reviews-form__list">
               <li class="reviews-form__item--text">
-                <label class="reviews-form__subtitle reviews-form__subtitle--light">Имя*:
-                  <input class="reviews-form_inp reviews-form_inp--middle" type="text" placeholder="Петр" required>
-              </label>
+                <label class="reviews-form__subtitle reviews-form__subtitle--light" for="name">Имя*:</label>
+                <input class="reviews-form__inp" id="name" type="text" placeholder="Петр" required>
               </li>
               <li class="reviews-form__item--text">
-                <label class="reviews-form__subtitle reviews-form__subtitle--light">Фамилия*:
-                  <input class="reviews-form_inp reviews-form_inp--small" type="text" placeholder="Иванов" required>
-                </label>
+                <label class="reviews-form__subtitle reviews-form__subtitle--light" for="surname">Фамилия*:</label>
+                <input class="reviews-form__inp" id="surname" type="text" placeholder="Иванов" required>
               </li>
               <li class="reviews-form__item--text">
-                <label class="reviews-form__subtitle reviews-form__subtitle--light">Отчество:
-                  <input class="reviews-form_inp reviews-form_inp--small" type="text" placeholder="Александрович">
-                </label>
+                <label class="reviews-form__subtitle reviews-form__subtitle--light" for="patronymic">Отчество:</label>
+                <input class="reviews-form__inp" id="patronymic" type="text" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="reviews-form__block reviews-form__block--contacts">
             <legend class="reviews-form__title">Контактная информация:</legend>
-            <ul class="reviews-form__list reviews-form__list--left">
+            <ul class="reviews-form__list">
               <li class="reviews-form__item--number">
-                <label class="reviews-form__subtitle reviews-form__subtitle--light">Контактный телефон*:
-                  <input class="reviews-form_inp reviews-form_inp--big" type="number" placeholder="Введите телефон" required>
-                </label>
-                <div class="reviews-form__block-icon"></div>
+                <label class="reviews-form__subtitle reviews-form__subtitle--light" for="phone">Контактный телефон*:</label>
+                <div class="reviews-form__wrap-inp">
+                  <input class="reviews-form__inp" id="phone" type="number" placeholder="Введите телефон" required>
+                  <div class="reviews-form__block-icon">
+                    <svg class="reviews-form__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                      <g id="Page-1">
+                        <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                          <g id="phone" transform="translate(85.000000, 126.000000)">
+                            <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
               </li>
               <li class="reviews-form__item--number">
-                <label class="reviews-form__subtitle reviews-form__subtitle--light">Электронная почта*:
-                  <input class="reviews-form_inp reviews-form_inp--big" type="text" placeholder="Введите e-mail" required>
-                </label>
-                <div class="reviews-form__block-icon"></div>
+                <label class="reviews-form__subtitle reviews-form__subtitle--light" for="mail">Электронная почта*:</label>
+                <div class="reviews-form__wrap-inp">
+                  <input class="reviews-form__inp" id="mail" type="text" placeholder="Введите e-mail" required>
+                  <div class="reviews-form__block-icon">
+                    <svg class="reviews-form__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                    </svg>
+                  </div>
+                </div>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="reviews-form__block">
+          <fieldset class="reviews-form__block reviews-form__block--impression">
             <legend class="reviews-form__title">Ваше общее впечатление:</legend>
-            <ul class="reviews-form__list">
+            <ul class="reviews-form__list reviews-form__list--radio">
               <li class="reviews-form__item--radio">
                 <label class="reviews-form__subtitle reviews-form__subtitle--dark">
                   <input class="reviews-form__inp-radio" type="radio" name="impression" value="yes" checked>Скорее положительное
@@ -122,35 +135,40 @@
             </ul>
           </fieldset>
 
-          <fieldset class="reviews-form__block">
+          <fieldset class="reviews-form__block reviews-form__block--sight">
             <legend class="reviews-form__title">Посещенные достопримечательности:</legend>
-            <ul class="reviews-form__list">
+            <ul class="reviews-form__list reviews-form__list--checkbox">
               <li class="reviews-form__item--checkbox">
                 <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                  <input type="checkbox" name="bridge" checked>Мост Дьявола
+                  <input class="reviews-form__inp-checkbox" type="checkbox" name="bridge" checked>Мост Дьявола
+                  <span class="reviews-form__checkbox"></span>
+                </label>
                 </label>
               </li>
               <li class="reviews-form__item--checkbox">
                 <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                  <input type="checkbox" name="mountain" checked>Гора-Колокол
+                  <input class="reviews-form__inp-checkbox" type="checkbox" name="mountain" checked>Гора-Колокол
+                  <span class="reviews-form__checkbox"></span>
                 </label>
               </li>
               <li class="reviews-form__item--checkbox">
                 <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                  <input type="checkbox" name="park" checked>Слайд-парк
+                  <input class="reviews-form__inp-checkbox" type="checkbox" name="park" checked>Слайд-парк
+                  <span class="reviews-form__checkbox"></span>
                 </label>
               </li>
               <li class="reviews-form__item--checkbox">
                 <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                  <input type="checkbox" name="rocks">Красные скалы
+                  <input class="reviews-form__inp-checkbox" type="checkbox" name="rocks">Красные скалы
+                  <span class="reviews-form__checkbox"></span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="reviews-form__block reviews-form__block--last">
-            <legend class="reviews-form__title">Опишите свои эмоции:</legend>
-            <textarea class="reviews-form__textarea container" name="textarea" rows="6" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="reviews-form__block reviews-form__block--emotion">
+            <legend class="reviews-form__title reviews-form__title--emotion">Опишите свои эмоции:</legend>
+            <textarea class="reviews-form__textarea" name="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
           <div class="reviews-form__wrap-btn">
@@ -205,19 +223,20 @@
       </div>
     </footer>
 
-  <div class="pop-up pop-up--failure">
-    <b class="pop-up__title">Что-то пошло не так!</b>
-    <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="pop-up__btn--failure link__blue">Ок</button>
-  </div>
-
-  <div class="pop-up pop-up--success">
-    <b class="pop-up__title">Ваш отзыв отправлен!</b>
-    <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    <div class="pop-up__bg-down">
-      <button class="pop-up__btn--success link__blue">Закрыть окно</button>
+    <div class="pop-up pop-up--failure">
+      <b class="pop-up__title">Что-то пошло не так!</b>
+      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="pop-up__wrap-btn--up">
+        <button class="pop-up__btn pop-up__btn--failure">Ок</button>
+      </div>
     </div>
-  </div>
 
+    <div class="pop-up pop-up--success">
+      <b class="pop-up__title">Ваш отзыв отправлен!</b>
+      <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="pop-up__wrap-btn--down">
+        <button class="pop-up__btn pop-up__btn--success">Закрыть окно</button>
+      </div>
+    </div>
   </body>
 </html>
