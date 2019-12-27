@@ -12,9 +12,22 @@
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  letter-spacing: 0.2px;
 }
 
-.list-menu__number,
+.list-menu__number {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .list-menu__slogan {
   font-family: $basic-font;
   font-size: 14px;
@@ -22,6 +35,9 @@
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  letter-spacing: 0.1px;
 }
 
 .list-menu__block-text {
@@ -34,31 +50,6 @@
 
 .list-menu__item {
 
-  &--grey {
-    background-color: $bg-lightgrey;
-    display: flex;
-    flex-direction: column;
-
-    .list-menu__title {
-      margin-top: 0;
-      padding-top: 28px;
-      margin-bottom: 11.5px;
-      color: $bg-black;
-    }
-
-    .list-menu__number {
-      margin-bottom: 0;
-      color: $bg-grey;
-    }
-
-    .list-menu__slogan {
-      padding-left: 36.5px;
-      padding-right: 37px;
-      padding-bottom: 11.5px;
-      color: $bg-grey;
-    }
-  }
-
   &--blue {
     .list-menu__title {
       margin-top: 0;
@@ -68,11 +59,13 @@
     }
 
     .list-menu__number {
+      margin-top: 0;
       margin-bottom: 0;
       color: $bg-white;
     }
 
     .list-menu__slogan {
+      margin-top: 15px;
       margin-bottom: 0;
       padding-bottom: 40.5px;
       color: $bg-white;
@@ -82,29 +75,20 @@
 
   &--big {
     position: relative;
+
     .list-menu__title {
       padding-top: 57px;
     }
+
     .list-menu__slogan {
-      padding-right: 20px;
-      padding-left: 27.5px;
-      padding-bottom: 42.5px;
+      padding-bottom: 40.5px;
     }
+
     .list-menu__pattern {
+      width: 100%;
       position: absolute;
       left: 0;
       top: -20px;
     }
   }
-
-  &--border::before,
-  &--border::after {
-    content: " ";
-    background-color: #d6d6d6;
-    display: block;
-    width: 280px;
-    height: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    }
 }
