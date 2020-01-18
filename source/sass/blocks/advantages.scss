@@ -1,0 +1,31 @@
+.advantages__header {
+  text-align: center;
+  padding-top: 41px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.advantages__slogan {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+  text-transform: uppercase;
+}
+
+.advantages__intro {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
+  color: $bg-grey;
+  text-transform: uppercase;
+  margin-top: 29px;
+  margin-bottom: 25px;
+  letter-spacing: 0.1px;
+}

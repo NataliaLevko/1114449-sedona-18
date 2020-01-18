@@ -1,0 +1,31 @@
+.page-header__wrap {
+  background-color: $bg-white;
+  display: flex;
+}
+
+.page-header__link {
+  margin-left: -51px;
+  margin-bottom: -27px;
+  left: 50%;
+  position: relative;
+}
+
+.page-header__logo-image {
+  display: block;
+}
+
+.page-header__btn {
+  background-color: transparent;
+  border: none;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-top: 6px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.page-header__icon {
+  fill: $bg-blue;
+}

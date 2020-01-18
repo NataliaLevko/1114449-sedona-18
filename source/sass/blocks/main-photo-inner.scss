@@ -1,0 +1,7 @@
+.main-photo-inner {
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center 133px,
+    url("../img/text-sedona.svg") no-repeat center 52px,
+    $bg-blue url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  background-size: 100%, 229px 39px, auto;
+  height: 158px;
+}

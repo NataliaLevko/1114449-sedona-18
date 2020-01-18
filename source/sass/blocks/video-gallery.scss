@@ -1,0 +1,102 @@
+.video-gallery {
+  position: relative;
+}
+
+.video-gallery__header {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.video-gallery__slogan {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+  text-transform: uppercase;
+}
+
+.video-gallery__intro {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  color: $bg-grey;
+  text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 34px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.video-gallery__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.video-gallery__progress-bar {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 280px;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -140px;
+}
+
+.video-gallery__scale {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 235px;
+  height: 3px;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.video-gallery__toggle {
+  background-color: $bg-white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 36px;
+}
+
+.video-gallery__controls {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 280px;
+  height: 66px;
+  padding-top: 4px;
+  padding-right: 23px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.video-gallery__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &--replay {
+    margin-left: 0;
+  }
+
+  &--subtitles {
+    margin-right: 31px;
+    margin-left: auto;
+  }
+
+  &--fullscreen {
+    margin-right: 0;
+  }
+}
+
+.video-gallery__icon {
+  fill: #5c6870;
+}

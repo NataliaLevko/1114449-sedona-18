@@ -1,0 +1,240 @@
+.reviews-form {
+  border-top: 1px solid #e5e5e5;
+}
+
+.reviews-form__title {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 18.5px;
+  margin-right: 20px;
+  margin-bottom: 23px;
+  margin-left: 20px;
+
+  &--emotion {
+    margin-bottom: 18px;
+  }
+}
+
+.reviews-form__list {
+  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 280px;
+
+  &--radio {
+    margin-top: 14px;
+  }
+
+  &--checkbox {
+    margin-top: 9px;
+  }
+}
+
+.reviews-form__item {
+  &--text {
+    margin-bottom: 20.5px;
+    display: flex;
+  }
+
+  &--number {
+    margin-bottom: 11px;
+  }
+
+  &--radio {
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 42px;
+    }
+  }
+
+  &--checkbox {
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.reviews-form__item--number .reviews-form__subtitle--light {
+  padding-left: 22px;
+  margin-bottom: 6.5px;
+}
+
+.reviews-form__wrap-inp {
+  display: flex;
+}
+
+.reviews-form__block {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: none;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+  &--full-name {
+    padding-bottom: 3px;
+  }
+
+  &--contacts {
+    padding-bottom: 17px;
+  }
+
+  &--impression {
+    padding-bottom: 0;
+  }
+
+  &--sight {
+    padding-bottom: 0;
+  }
+
+  &--emotion {
+    border-bottom: none;
+    padding-bottom: 8.5px;
+  }
+}
+
+.reviews-form__subtitle {
+  font-family: $basic-font;
+  line-height: 26px;
+  font-style: normal;
+
+  &--light {
+    font-size: 14px;
+    font-weight: normal;
+    color: $bg-grey;
+    text-transform: uppercase;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--dark {
+    font-size: 18px;
+    font-weight: bold;
+    color: $bg-black;
+    position: relative;
+    padding-left: 57px;
+  }
+}
+
+.reviews-form__inp {
+  background-color: #f2f2f2;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-left: 21px;
+  box-sizing: border-box;
+}
+
+.reviews-form__item--text .reviews-form__inp {
+  width: 100%;
+}
+
+.reviews-form__item--number .reviews-form__inp {
+  flex-grow: 1;
+}
+
+.reviews-form__inp::placeholder,
+.reviews-form__textarea::placeholder {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+}
+
+.reviews-form__inp-radio,
+.reviews-form__inp-checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.reviews-form__inp-radio {
+  margin-bottom: 23px;
+}
+
+.reviews-form__inp-checkbox {
+  margin-bottom: 25px;
+}
+
+.reviews-form__radio-box {
+  background-color: #f2f2f2;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: absolute;
+  top: -16px;
+  left: -20px;
+}
+
+.reviews-form__checkbox {
+  background-color: #f2f2f2;
+  width: 56px;
+  height: 56px;
+  border-radius: 3px;
+  position: absolute;
+  top: -16px;
+  left: -20px;
+}
+
+.reviews-form__textarea {
+  background-color: #f2f2f2;
+  border: none;
+  width: calc(100% - 40px);
+  height: 160px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 42px;
+  margin-left: 20px;
+  resize: none;
+}
+
+.reviews-form__block-icon {
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-form__wrap-btn {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.reviews-form__btn {
+  width: 100%;
+  border: none;
+}

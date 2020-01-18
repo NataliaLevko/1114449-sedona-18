@@ -1,0 +1,67 @@
+.list-menu-grey {
+  background-color: $bg-lightgrey;
+  list-style: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.list-menu-grey__item {
+  &--border::before,
+  &--border::after {
+    content: " ";
+    background-color: #d6d6d6;
+    display: block;
+    width: 280px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:last-child .list-menu-grey__slogan {
+    padding-bottom: 27px;
+  }
+}
+
+.list-menu-grey__title {
+  font-family: $basic-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  color: $bg-black;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 26px;
+  margin-bottom: 9.5px;
+  letter-spacing: 0.1px;
+}
+
+.list-menu-grey__number {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: $bg-grey;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-menu-grey__slogan {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: $bg-grey;
+  text-transform: uppercase;
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+  padding-bottom: 11.5px;
+  letter-spacing: 0.1px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
