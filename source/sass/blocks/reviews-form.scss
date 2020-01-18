@@ -23,15 +23,17 @@
 
 .reviews-form__list {
   list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 0;
-  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 280px;
 
   &--radio {
     margin-top: 14px;
   }
+
   &--checkbox {
     margin-top: 9px;
   }
@@ -42,9 +44,11 @@
     margin-bottom: 20.5px;
     display: flex;
   }
+
   &--number {
     margin-bottom: 11px;
   }
+
   &--radio {
     margin-bottom: 44px;
 
@@ -52,6 +56,7 @@
       margin-bottom: 42px;
     }
   }
+
   &--checkbox {
     margin-bottom: 54px;
 
@@ -84,15 +89,19 @@
   &--full-name {
     padding-bottom: 3px;
   }
+
   &--contacts {
     padding-bottom: 17px;
   }
+
   &--impression {
     padding-bottom: 0;
   }
+
   &--sight {
     padding-bottom: 0;
   }
+
   &--emotion {
     border-bottom: none;
     padding-bottom: 8.5px;
@@ -113,6 +122,7 @@
     display: flex;
     align-items: center;
   }
+
   &--dark {
     font-size: 18px;
     font-weight: bold;
@@ -156,8 +166,8 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0px;
-  padding: 0px;
+  border: 0;
+  padding: 0;
   overflow: hidden;
   white-space: nowrap;
   clip-path: inset(100%);

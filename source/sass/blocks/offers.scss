@@ -42,14 +42,17 @@
 .offers__photo {
   fill: $bg-blue;
   position: absolute;
+
   &--home {
     left: 22px;
     top: -9px;
   }
+
   &--gift {
     left: 25.5px;
     top: -11px;
   }
+
   &--food {
     left: 18px;
     top: -5px;

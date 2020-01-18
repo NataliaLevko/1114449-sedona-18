@@ -1,7 +1,7 @@
 .main-photo {
-  background: url("../img/bg-intro-triangle-mobile.svg") center bottom no-repeat,
-              url("../img/text-sedona-index.svg") center center no-repeat,
-              $bg-blue url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+  background: url("../img/bg-intro-triangle-mobile.svg") center 364px no-repeat,
+    url("../img/text-sedona-index.svg") center center no-repeat,
+    $bg-blue url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
   background-size: 100%, 282px 214px, auto;
   height: 389px;
 }
