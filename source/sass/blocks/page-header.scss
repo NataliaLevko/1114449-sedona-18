@@ -29,3 +29,9 @@
 .page-header__icon {
   fill: $bg-blue;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__btn {
+    display: none;
+  }
+}

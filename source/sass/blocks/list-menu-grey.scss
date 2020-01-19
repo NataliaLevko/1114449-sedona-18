@@ -65,3 +65,14 @@
   margin-top: 15px;
   margin-bottom: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .list-menu-grey {
+    display: flex;
+  }
+
+  .list-menu-grey__item--border::before,
+  .list-menu-grey__item--border::after {
+      display: none;
+    }
+}
