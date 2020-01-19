@@ -97,7 +97,7 @@
   .list-menu__item {
     display: flex;
 
-    &:nth-child(3) {
+    &:nth-child(3) .list-menu__block-text {
       order: 2;
     }
 
@@ -112,6 +112,10 @@
   .list-menu__photo-image {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .list-menu__title {
+    font-size: 21px;
   }
 
 }

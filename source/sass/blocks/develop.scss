@@ -19,3 +19,9 @@
   fill: $bg-black;
   vertical-align: middle;
 }
+
+@media (min-width: $tablet-width) {
+  .develop {
+    margin-top: 32px;
+  }
+}

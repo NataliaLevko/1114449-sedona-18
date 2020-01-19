@@ -29,3 +29,16 @@
   margin-bottom: 25px;
   letter-spacing: 0.1px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__header {
+    padding-top: 49.5px;
+    padding-right: 119px;
+    padding-left: 119px;
+    letter-spacing: 0.2px;
+  }
+
+  .advantages__slogan {
+    font-size: 21px;
+  }
+}
