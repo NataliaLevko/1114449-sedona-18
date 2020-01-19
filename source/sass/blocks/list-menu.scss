@@ -46,6 +46,8 @@
 
 .list-menu__photo-image {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .list-menu__item {
@@ -89,4 +91,27 @@
       top: -20px;
     }
   }
+}
+
+@media (min-width: $tablet-width) {
+  .list-menu__item {
+    display: flex;
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &--big {
+      .list-menu__pattern {
+        display: none;
+
+      }
+    }
+  }
+
+  .list-menu__photo-image {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
 }

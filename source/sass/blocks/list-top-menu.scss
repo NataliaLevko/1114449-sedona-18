@@ -24,3 +24,15 @@
 .list-top-menu__item {
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 }
+
+@media (min-width: $tablet-width) {
+  .list-top-menu__link {
+    font-size: 14px;
+    line-height: 26px;
+    color: $bg-black;
+  }
+
+  .list-top-menu__item {
+    box-shadow: none;
+  }
+}

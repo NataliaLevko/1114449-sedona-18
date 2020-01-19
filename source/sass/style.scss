@@ -1,5 +1,6 @@
-@import "normalize.scss";
+@import "normalize";
 @import "variables";
+@import "mixins";
 @import "blocks/global";
 @import "blocks/main-nav";
 @import "blocks/offers";
@@ -22,3 +23,4 @@
 @import "blocks/reviews-form";
 @import "blocks/pop-up";
 @import "blocks/list-menu-grey";
+@import "blocks/page-footer";
