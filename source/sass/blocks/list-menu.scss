@@ -94,6 +94,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .list-menu {
+    margin-top: 51px;
+  }
+
+  .list-menu__block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .list-menu__item {
     display: flex;
 
@@ -104,7 +115,23 @@
     &--big {
       .list-menu__pattern {
         display: none;
+      }
 
+      .list-menu__title {
+        padding-top: 40px;
+        font-size: 21px;
+      }
+    }
+
+    &--blue {
+      .list-menu__title {
+        margin-bottom: 11.5px;
+      }
+
+      .list-menu__slogan {
+        margin-top: 22px;
+        padding-right: 23px;
+        padding-left: 23px;
       }
     }
   }
@@ -113,9 +140,4 @@
     margin-right: 0;
     margin-left: 0;
   }
-
-  .list-menu__title {
-    font-size: 21px;
-  }
-
 }

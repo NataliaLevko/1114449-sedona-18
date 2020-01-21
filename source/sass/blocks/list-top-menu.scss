@@ -34,5 +34,15 @@
 
   .list-top-menu__item {
     box-shadow: none;
+    width: 20%;
+    margin-top: 8px;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

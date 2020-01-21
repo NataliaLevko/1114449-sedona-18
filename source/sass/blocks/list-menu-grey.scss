@@ -71,8 +71,21 @@
     display: flex;
   }
 
-  .list-menu-grey__item--border::before,
-  .list-menu-grey__item--border::after {
+  .list-menu-grey__title {
+    font-size: 21px;
+    padding-top: 30px;
+  }
+
+  .list-menu-grey__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+
+    &--border::before,
+    &--border::after {
       display: none;
     }
+  }
 }
