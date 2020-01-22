@@ -99,10 +99,17 @@
   }
 
   .list-menu__block-text {
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .list-menu__block-photo {
+    width: 67%;
+    position: relative;
+    overflow: hidden;
   }
 
   .list-menu__item {
@@ -124,6 +131,8 @@
     }
 
     &--blue {
+      width: 100%;
+
       .list-menu__title {
         margin-bottom: 11.5px;
       }
@@ -137,6 +146,9 @@
   }
 
   .list-menu__photo-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     margin-right: 0;
     margin-left: 0;
   }

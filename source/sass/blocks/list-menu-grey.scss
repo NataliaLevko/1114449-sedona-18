@@ -87,5 +87,9 @@
     &--border::after {
       display: none;
     }
+
+    &:last-child .list-menu-grey__slogan {
+      padding-bottom: 17px;
+    }
   }
 }

@@ -7,3 +7,10 @@
     margin-left: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrap {
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+}

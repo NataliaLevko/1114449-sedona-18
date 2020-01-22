@@ -36,3 +36,18 @@
   width: auto;
   letter-spacing: 0.1px;
 }
+
+@media (min-width: $tablet-width) {
+  .booking {
+    padding-right: 147px;
+    padding-left: 147px;
+  }
+  
+  .booking__block {
+    margin-bottom: 40px;
+  }
+
+  .booking__link {
+    width: 458px;
+  }
+}
