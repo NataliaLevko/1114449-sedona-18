@@ -1,5 +1,6 @@
-@mixin list-reset {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+@mixin margins-reset {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }

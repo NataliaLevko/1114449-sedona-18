@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 62px;
+  padding-left: 62px;
 }
 
 .socials-list__item {
@@ -23,5 +27,6 @@
 @media (min-width: $tablet-width) {
   .socials-list {
     margin-top: 25px;
+    @include margins-reset;
   }
 }

@@ -15,6 +15,8 @@
   font-style: normal;
   color: $bg-black;
   text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .video-gallery__intro {
@@ -26,15 +28,21 @@
   color: $bg-grey;
   text-transform: uppercase;
   margin-top: 27px;
-  margin-bottom: 34px;
-  padding-right: 40px;
-  padding-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .video-gallery__wrap {
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.video-gallery__poster {
+  display: block;
 }
 
 .video-gallery__progress-bar {
@@ -62,7 +70,7 @@
   height: 10px;
   border-radius: 50%;
   position: absolute;
-  top: -3px;
+  top: -3.5px;
   left: 36px;
 }
 
@@ -83,6 +91,7 @@
   background-color: transparent;
   padding: 0;
 
+
   &--replay {
     margin-left: 0;
   }
@@ -99,4 +108,115 @@
 
 .video-gallery__icon {
   fill: #5c6870;
+}
+
+@media (min-width: $tablet-width) {
+  .video-gallery__slogan {
+    font-size: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .video-gallery__intro {
+    margin-top: 29px;
+    margin-bottom: 73px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-right: 116px;
+    padding-left: 114px;
+    letter-spacing: 0.1px;
+  }
+
+  .video-gallery__header {
+    padding-top: 51px;
+  }
+
+  .video-gallery__progress-bar {
+    width: 648px;
+    height: 93px;
+    margin-left: -324px;
+  }
+
+  .video-gallery__scale {
+    width: 389px;
+    height: 3px;
+    top: 45px;
+    left: 92px;
+  }
+
+  .video-gallery__toggle {
+    top: -4.5px;
+    left: 113px;
+  }
+
+  .video-gallery__controls {
+    background-color: transparent;
+    width: 648px;
+    height: 93px;
+    margin-left: -324px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  .video-gallery__icon {
+    fill: $bg-white;
+  }
+
+  .video-gallery__btn {
+
+    &--replay {
+      margin-top: -3px;
+      padding-left: 9px;
+    }
+
+    &--subtitles {
+      margin-right: 31px;
+    }
+
+    &--fullscreen {
+      margin-right: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .video-gallery__header {
+    padding-top: 72px;
+  }
+
+  .video-gallery__intro {
+    margin-top: 28.5px;
+    margin-bottom: 70.5px;
+    padding-right: 330px;
+    padding-left: 330px;
+  }
+
+  .video-gallery__scale {
+    width: 540px;
+  }
+
+  .video-gallery__toggle {
+    top: -3.5px;
+    left: 112px;
+  }
+
+  .video-gallery__progress-bar {
+    width: 800px;
+    margin-left: -400px;
+  }
+
+  .video-gallery__controls {
+    width: 800px;
+    margin-left: -400px;
+  }
+
+  .video-gallery__btn {
+    &--fullscreen {
+      margin-right: 20.5px;
+    }
+  }
 }

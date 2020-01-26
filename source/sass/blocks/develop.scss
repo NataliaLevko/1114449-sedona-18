@@ -2,6 +2,10 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 23px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .develop__text {
@@ -13,6 +17,7 @@
   color: $bg-black;
   text-transform: uppercase;
   margin-right: 10px;
+  letter-spacing: 0.2px;
 }
 
 .develop__photo-image {
@@ -23,5 +28,6 @@
 @media (min-width: $tablet-width) {
   .develop {
     margin-top: 32px;
+    @include margins-reset;
   }
 }

@@ -1,5 +1,5 @@
 .gallery {
-  margin-bottom: 75px;
+  padding-bottom: 40px;
 }
 
 .gallery__header {
@@ -14,8 +14,12 @@
   font-style: normal;
   color: $bg-black;
   text-transform: uppercase;
-  margin-top: 39px;
-  margin-bottom: 27px;
+  margin-top: 38.5px;
+  margin-bottom: 26px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .gallery__intro {
@@ -26,7 +30,47 @@
   font-style: normal;
   color: $bg-grey;
   text-transform: uppercase;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 27px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .gallery {
+    padding-bottom: 52px;
+  }
+
+  .gallery__slogan {
+    margin-top: 75px;
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+
+  .gallery__intro {
+    margin-bottom: 68px;
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .gallery {
+    padding-bottom: 74px;
+  }
+
+  .gallery__slogan {
+    margin-top: 110px;
+    padding-right: 360px;
+    padding-left: 360px;
+  }
+
+  .gallery__intro {
+    margin-bottom: 70px;
+    padding-right: 363px;
+    padding-left: 360px;
+  }
 }

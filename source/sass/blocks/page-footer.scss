@@ -2,7 +2,7 @@
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 11px;
+    padding-top: 0;
     margin-right: 60px;
     margin-left: 60px;
   }
@@ -10,6 +10,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrap {
+    padding-top: 22px;
     margin-right: 120px;
     margin-left: 120px;
   }

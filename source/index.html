@@ -37,7 +37,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg 1x">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg 1x">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" aria-label="логотип седона" alt="логотип седона">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" aria-label="логотип седона" alt="логотип седона">
           </picture>
         </a>
         <button class="page-header__btn" type="button" aria-label="Открыть меню">
@@ -78,7 +78,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x">
                 <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x">
-                <img class="list-menu__photo-image" src="img/main-city-mobile@1x.jpg" alt="настоящий городок Седона" aria-label="настоящий городок Седона">
+                <img class="list-menu__photo-image" src="img/main-city-mobile@1x.jpg" alt="настоящий городок Седона">
               </picture>
             </div>
           <li class="list-menu__item">
@@ -89,41 +89,52 @@
               </li>
               <li class="offers__item offers__item--gift">
                 <h4 class="offers__title">Сувениры</h4>
-                <p class="offers__slogan">Не только китайского, но и местного производства!</p>
+                <p class="offers__slogan">Не только&nbsp;китайского, но и местного производства!</p>
               </li>
               <li class="offers__item offers__item--food">
                 <h4 class="offers__title">Еда</h4>
-                <p class="offers__slogan">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="offers__slogan">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="list-menu__item list-menu__item--blue">
 
             <div class="list-menu__block-text">
-              <h3 class="list-menu__title">Там есть мост дьявола</h3>
+              <h3 class="list-menu__title">Там есть мост&nbsp;дьявола</h3>
               <p class="list-menu__number">— №2 —</p>
               <p class="list-menu__slogan">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-
-            <img class="list-menu__photo-image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="мост дьявола" aria-label="мост дьявола">
+            <div class="list-menu__block-photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x">
+                <img class="list-menu__photo-image" src="img/main-bridge-mobile@1x.jpg" alt="мост дьявола">
+              </picture>
+            </div>
 
           </li>
           <li class="list-menu__item">
             <ul class="list-menu-grey">
               <li class="list-menu-grey__item">
-                <h3 class="list-menu-grey__title">Небольшая площадь</h3>
-                <p class="list-menu-grey__number">— №3 —</p>
-                <p class="list-menu-grey__slogan">Все интересные места находятся очень близко</p>
+                <div class="list-menu-grey__wrap">
+                  <h3 class="list-menu-grey__title">Небольшая площадь</h3>
+                  <p class="list-menu-grey__number">— №3 —</p>
+                  <p class="list-menu-grey__slogan">Все интересные места находятся очень близко</p>
+              </div>
               </li>
               <li class="list-menu-grey__item list-menu-grey__item--border">
-                <h3 class="list-menu-grey__title">Красивая дорога</h3>
-                <p class="list-menu-grey__number">— №4 —</p>
-                <p class="list-menu-grey__slogan">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <div class="list-menu-grey__wrap">
+                  <h3 class="list-menu-grey__title">Красивая дорога</h3>
+                  <p class="list-menu-grey__number">— №4 —</p>
+                  <p class="list-menu-grey__slogan">Ехать в Седону из Лас-&nbsp;Вегаса совсем не&nbsp;скучно!</p>
+                </div>
               </li>
               <li class="list-menu-grey__item">
-                <h3 class="list-menu-grey__title">Мало туристов</h3>
-                <p class="list-menu-grey__number">— №5 —</p>
-                <p class="list-menu-grey__slogan">Большинство едет в Гранд Каньон и толпится там</p>
+                <div class="list-menu-grey__wrap">
+                  <h3 class="list-menu-grey__title">Мало туристов</h3>
+                  <p class="list-menu-grey__number">— №5 —</p>
+                  <p class="list-menu-grey__slogan">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
               </li>
             </ul>
           </li>
@@ -132,10 +143,12 @@
 
       <section class="booking">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <b class="booking__title">Заинтересовались?</b>
-        <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="booking__block">
-          <a class="booking__link link-blue container" href="#">Найти гостиницу</a>
+        <div class="booking__wrap">
+          <b class="booking__title">Заинтересовались?</b>
+          <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="booking__block">
+            <a class="booking__link link-blue container" href="#">Найти гостиницу</a>
+          </div>
         </div>
       </section>
 

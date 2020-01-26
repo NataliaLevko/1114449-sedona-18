@@ -81,7 +81,7 @@
     }
 
     .list-menu__slogan {
-      padding-bottom: 40.5px;
+      padding-bottom: 44px;
     }
 
     .list-menu__pattern {
@@ -104,6 +104,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 256px;
   }
 
   .list-menu__block-photo {
@@ -125,8 +126,7 @@
       }
 
       .list-menu__title {
-        padding-top: 40px;
-        font-size: 21px;
+        padding-top: 44px;
       }
     }
 
@@ -135,6 +135,7 @@
 
       .list-menu__title {
         margin-bottom: 11.5px;
+        font-size: 21px;
       }
 
       .list-menu__slogan {
@@ -146,10 +147,16 @@
   }
 
   .list-menu__photo-image {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    margin-right: 0;
-    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-menu__photo-image {
+    top: 0;
+    left: 0;
   }
 }
