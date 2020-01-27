@@ -42,3 +42,10 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages__header {
+    padding-right: 335px;
+    padding-left: 335px;
+  }
+}

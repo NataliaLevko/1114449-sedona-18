@@ -26,6 +26,10 @@
   margin-top: 21px;
   margin-bottom: 34px;
   letter-spacing: 0.1px;
+
+  & br {
+    display: none;
+  }
 }
 
 .booking__block {
@@ -39,13 +43,19 @@
 
 @media (min-width: $tablet-width) {
   .booking {
-    padding-top: 56px;
-    padding-right: 147px;
-    padding-left: 147px;
+    padding-top: 55px;
+    padding-right: 135px;
+    padding-left: 135px;
   }
 
   .booking__text {
     margin-top: 29px;
+    margin-bottom: 41px;
+    letter-spacing: 0;
+
+    & br {
+      display: block;
+    }
   }
 
   .booking__title {
@@ -53,10 +63,21 @@
   }
 
   .booking__block {
-    margin-bottom: 40px;
+    margin-bottom: 59px;
   }
 
   .booking__link {
     width: 458px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking__text {
+    margin-bottom: 46.5px;
+  }
+
+  .booking__block {
+    margin-bottom: 65px;
   }
 }

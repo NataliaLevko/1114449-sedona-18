@@ -138,7 +138,16 @@
   padding-top: 20px;
   padding-bottom: 19px;
   padding-left: 21px;
-  box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $bg-white;
+    box-sizing: border-box;
+    border: solid 4px #e5e5e5;
+  }
 }
 
 .reviews-form__item--text .reviews-form__inp {

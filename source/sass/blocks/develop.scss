@@ -23,6 +23,14 @@
 .develop__photo-image {
   fill: $bg-black;
   vertical-align: middle;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

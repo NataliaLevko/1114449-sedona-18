@@ -34,8 +34,14 @@
   text-transform: uppercase;
   margin-top: 0;
   padding-top: 26px;
+  padding-right: 15.5px;
+  padding-left: 15.5px;
   margin-bottom: 9.5px;
   letter-spacing: 0.1px;
+
+  & br {
+    display: none;
+  }
 }
 
 .list-menu-grey__number {
@@ -77,13 +83,18 @@
 
   .list-menu-grey__title {
     font-size: 21px;
-    padding-top: 20px;
+    padding-top: 19px;
     padding-right: 58.5px;
     padding-left: 58.5px;
+    margin-bottom: 12.5px;
+
+    & br {
+      display: block;
+    }
   }
 
   .list-menu-grey__slogan {
-    margin-top: 23px;
+    margin-top: 21.5px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -106,7 +117,6 @@
     &--border::after {
       display: none;
     }
-
 
     &:last-child .list-menu-grey__slogan {
       padding-bottom: 11.5px;

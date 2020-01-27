@@ -104,6 +104,15 @@
   &--fullscreen {
     margin-right: 0;
   }
+
+  &:hover .video-gallery__icon {
+    fill: $bg-grey;
+  }
+
+  &:active .video-gallery__icon {
+    fill: $bg-grey;
+    opacity: 0.3;
+  }
 }
 
 .video-gallery__icon {
@@ -178,6 +187,16 @@
 
     &--fullscreen {
       margin-right: 18px;
+    }
+
+    &:hover .video-gallery__icon {
+      fill: $bg-white;
+      opacity: 0.6;
+    }
+
+    &:active .video-gallery__icon {
+      fill: $bg-white;
+      opacity: 0.3;
     }
   }
 }

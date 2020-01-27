@@ -4,6 +4,10 @@
   position: absolute;
   top: 16px;
   right: 14px;
+
+  &--reset {
+    z-index: 1;
+  }
 }
 
 .main-nav__icon {
@@ -11,7 +15,7 @@
 }
 
 .main-nav__list {
-  background-color: $bg-blue;
+  background-color: #81b3d2;
   box-shadow: inset 0 -4px 7px -2px rgba(0, 0, 0, 0.2);
 }
 
