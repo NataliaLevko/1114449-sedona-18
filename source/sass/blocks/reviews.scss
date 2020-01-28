@@ -32,3 +32,9 @@
   margin-bottom: 16px;
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__slogan {
+    font-size: 30px;
+  }
+}

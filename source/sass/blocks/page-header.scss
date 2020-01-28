@@ -17,12 +17,11 @@
 .page-header__btn {
   background-color: transparent;
   border: none;
-  padding-top: 0;
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0;
-  margin-top: 6px;
-  margin-right: 20px;
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 2.5px;
+  margin-right: 10px;
   margin-left: auto;
 }
 
@@ -42,6 +41,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
 
   .page-header__link {
     margin-left: -94px;

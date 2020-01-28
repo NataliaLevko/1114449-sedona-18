@@ -11,13 +11,16 @@
 }
 
 .socials-list__item {
+  margin-right: 6px;
+}
+
+.socials-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $bg-blue;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
+  background-color: $bg-blue;
 
   &:hover {
     background-color: #669ec0;
@@ -25,11 +28,12 @@
 
   &:active {
     background-color: #5496bd;
+
+    .socials-list__icon {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 
-  &:active .socials-list__link{
-    opacity: 0.3;
-  }
 }
 
 .socials-list__icon {
