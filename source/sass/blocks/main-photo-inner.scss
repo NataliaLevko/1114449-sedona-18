@@ -5,3 +5,23 @@
   background-size: 100%, 229px 39px, auto;
   height: 158px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-photo-inner {
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center 232px,
+      url("../img/text-sedona.svg") no-repeat center 95px,
+      $bg-blue url("../img/bg-back-tablet@1x.jpg") no-repeat center -229px;
+    background-size: 100%, 458px 78px, cover;
+    height: 289px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-photo-inner {
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center 245.5px,
+      url("../img/text-sedona.svg") no-repeat center 102px,
+      $bg-blue url("../img/bg-back-desktop@1x.jpg") no-repeat center -217px;
+    background-size: 100%, 461px 80px, cover;
+    height: 302px;
+  }
+}

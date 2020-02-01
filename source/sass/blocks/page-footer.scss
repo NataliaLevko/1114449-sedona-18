@@ -1,7 +1,25 @@
 @media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 10px;
+  }
+
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;
-    margin: 0 60px;
+    padding-top: 0;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+    margin-top: 11px;
+  }
+
+  .page-footer__wrap {
+    margin-right: 120px;
+    margin-left: 120px;
   }
 }

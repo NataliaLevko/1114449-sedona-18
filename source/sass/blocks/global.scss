@@ -1,24 +1,35 @@
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  clip-path: inset(100%);
+  @include visually-hidden;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: $bg-white;
   margin: 0;
   padding: 0;
-  min-width: 320px;   //мобильная версия от 320px
+  min-width: 320px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  color: $bg-black;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .body-wrap {
+    width: $desktop-width;
+    background-color: $bg-white;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: inset 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    margin: 0 auto;
+  }
 }

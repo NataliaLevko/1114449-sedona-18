@@ -19,9 +19,15 @@
     margin-right: auto;
   }
 
-  &:last-child .list-menu-grey__slogan {
-    padding-bottom: 27px;
+  &:last-child {
+    .list-menu-grey__slogan {
+      padding-bottom: 27px;
+    }
   }
+}
+
+.list-menu-grey__wrap {
+  padding-top: 26px;
 }
 
 .list-menu-grey__title {
@@ -33,9 +39,14 @@
   color: $bg-black;
   text-transform: uppercase;
   margin-top: 0;
-  padding-top: 26px;
+  padding-right: 15.5px;
+  padding-left: 15.5px;
   margin-bottom: 9.5px;
   letter-spacing: 0.1px;
+
+  & br {
+    display: none;
+  }
 }
 
 .list-menu-grey__number {
@@ -60,7 +71,7 @@
   text-transform: uppercase;
   padding-left: 15.5px;
   padding-right: 15.5px;
-  padding-bottom: 11.5px;
+  padding-bottom: 11px;
   letter-spacing: 0.1px;
   margin-top: 15px;
   margin-bottom: 17px;
@@ -69,10 +80,58 @@
 @media (min-width: $tablet-width) {
   .list-menu-grey {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-left: 0;
   }
 
-  .list-menu-grey__item--border::before,
-  .list-menu-grey__item--border::after {
+  .list-menu-grey__title {
+    font-size: 21px;
+    padding-top: 19px;
+    padding-right: 58.5px;
+    padding-left: 58.5px;
+    margin-bottom: 12.5px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .list-menu-grey__slogan {
+    margin-top: 21px;
+    padding-right: 0;
+    padding-left: 0;
+    letter-spacing: normal;
+  }
+
+  .list-menu-grey__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .list-menu-grey__item {
+    width: 33.3%;
+    min-height: 256px;
+
+    &--border::before,
+    &--border::after {
       display: none;
     }
+
+    &:last-child .list-menu-grey__slogan {
+      padding-bottom: 11.5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-menu-grey__title {
+    margin-bottom: 10px;
+  }
 }
