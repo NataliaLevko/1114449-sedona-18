@@ -80,7 +80,6 @@
   background-color: #f2f2f2;
   width: 280px;
   height: 66px;
-  padding-top: 4px;
   padding-right: 23px;
   padding-left: 25px;
   box-sizing: border-box;
@@ -89,20 +88,24 @@
 .video-gallery__btn {
   border: none;
   background-color: transparent;
-  padding: 0;
-
+  padding-top: 7px;
 
   &--replay {
     margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
   }
 
   &--subtitles {
-    margin-right: 31px;
+    margin-right: 19.5px;
     margin-left: auto;
+    padding-bottom: 4px;
   }
 
   &--fullscreen {
     margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 4px;
   }
 
   &:hover .video-gallery__icon {
@@ -129,7 +132,7 @@
   }
 
   .video-gallery__intro {
-    margin-top: 29px;
+    margin-top: 28px;
     margin-bottom: 73px;
     margin-right: 60px;
     margin-left: 60px;
@@ -182,11 +185,12 @@
     }
 
     &--subtitles {
-      margin-right: 31px;
+      margin-right: 18px;
     }
 
     &--fullscreen {
-      margin-right: 18px;
+      margin-right: 13px;
+      padding-right: 6px;
     }
 
     &:hover .video-gallery__icon {
@@ -204,11 +208,11 @@
 @media (min-width: $desktop-width) {
 
   .video-gallery__header {
-    padding-top: 72px;
+    padding-top: 71px;
   }
 
   .video-gallery__intro {
-    margin-top: 28.5px;
+    margin-top: 27px;
     margin-bottom: 70.5px;
     padding-right: 330px;
     padding-left: 330px;
@@ -235,7 +239,7 @@
 
   .video-gallery__btn {
     &--fullscreen {
-      margin-right: 20.5px;
+      margin-right: 14.5px;
     }
   }
 }

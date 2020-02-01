@@ -1,14 +1,5 @@
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  clip-path: inset(100%);
+  @include visually-hidden;
 }
 
 body {
@@ -34,8 +25,11 @@ img {
 
 @media (min-width: $desktop-width) {
   .body-wrap {
+    width: $desktop-width;
+    background-color: $bg-white;
     display: block;
     box-sizing: border-box;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: inset 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    margin: 0 auto;
   }
 }

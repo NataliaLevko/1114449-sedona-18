@@ -61,7 +61,7 @@
 
     <div class="page-main container">
       <main class="page-main__item">
-        <h1 class="visually-hidden">Седона - страница отзывов</h1>
+        <h1 class="visually-hidden">Седона – страница отзывов</h1>
         <div class="main-photo-inner"></div>
 
         <section class="reviews">
@@ -72,30 +72,30 @@
           </header>
           <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="reviews-form__block reviews-form__block--full-name">
-              <legend class="reviews-form__title">Представьтесь:</legend>
+              <legend class="reviews-form__title reviews-form__title--full-name">Представьтесь:</legend>
               <ul class="reviews-form__list">
                 <li class="reviews-form__item reviews-form__item--text">
                   <label class="reviews-form__subtitle reviews-form__subtitle--light" for="name">Имя*:</label>
-                  <input class="reviews-form__inp" id="name" type="text" placeholder="Петр" required>
+                  <input class="reviews-form__inp reviews-form__inp--text" id="name" type="text" placeholder="Петр" required>
                 </li>
                 <li class="reviews-form__item reviews-form__item--text">
                   <label class="reviews-form__subtitle reviews-form__subtitle--light" for="surname">Фамилия*:</label>
-                  <input class="reviews-form__inp" id="surname" type="text" placeholder="Иванов" required>
+                  <input class="reviews-form__inp reviews-form__inp--text" id="surname" type="text" placeholder="Иванов" required>
                 </li>
                 <li class="reviews-form__item reviews-form__item--text">
                   <label class="reviews-form__subtitle reviews-form__subtitle--light" for="patronymic">Отчество:</label>
-                  <input class="reviews-form__inp" id="patronymic" type="text" placeholder="Александрович">
+                  <input class="reviews-form__inp reviews-form__inp--text" id="patronymic" type="text" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="reviews-form__block reviews-form__block--contacts">
-              <legend class="reviews-form__title">Контактная информация:</legend>
+              <legend class="reviews-form__title reviews-form__title--contacts">Контактная информация:</legend>
               <ul class="reviews-form__list">
                 <li class="reviews-form__item reviews-form__item--number">
                   <label class="reviews-form__subtitle reviews-form__subtitle--light" for="phone">Контактный телефон*:</label>
                   <div class="reviews-form__wrap-inp">
-                    <input class="reviews-form__inp" id="phone" type="number" placeholder="Введите телефон" required>
+                    <input class="reviews-form__inp reviews-form__inp--number" id="phone" type="number" placeholder="Введите телефон" required>
                     <div class="reviews-form__block-icon">
                       <svg class="reviews-form__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
                         <g>
@@ -112,7 +112,7 @@
                 <li class="reviews-form__item reviews-form__item--number">
                   <label class="reviews-form__subtitle reviews-form__subtitle--light" for="mail">Электронная почта*:</label>
                   <div class="reviews-form__wrap-inp">
-                    <input class="reviews-form__inp" id="mail" type="text" placeholder="Введите e-mail" required>
+                    <input class="reviews-form__inp reviews-form__inp--number" id="mail" type="text" placeholder="Введите e-mail" required>
                     <div class="reviews-form__block-icon">
                       <svg class="reviews-form__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
                         <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
@@ -124,23 +124,23 @@
             </fieldset>
 
             <fieldset class="reviews-form__block reviews-form__block--impression">
-              <legend class="reviews-form__title">Ваше общее впечатление:</legend>
+              <legend class="reviews-form__title reviews-form__title--impression">Ваше общее впечатление:</legend>
               <ul class="reviews-form__list reviews-form__list--radio">
                 <li class="reviews-form__item reviews-form__item--radio">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-radio" type="radio" name="impression" value="yes" checked>Скорее положительное
+                    <input class="reviews-form__inp reviews-form__inp--radio" type="radio" name="impression" value="yes" checked>Скорее положительное
                     <span class="reviews-form__radio-box"></span>
                   </label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--radio">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-radio" type="radio" name="impression" value="no">Скорее отрицательное
+                    <input class="reviews-form__inp reviews-form__inp--radio" type="radio" name="impression" value="no">Скорее отрицательное
                     <span class="reviews-form__radio-box"></span>
                   </label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--radio">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-radio" type="radio" name="impression" value="inert">Затрудняюсь ответить
+                    <input class="reviews-form__inp reviews-form__inp--radio" type="radio" name="impression" value="inert">Затрудняюсь ответить
                     <span class="reviews-form__radio-box"></span>
                   </label>
                 </li>
@@ -148,29 +148,29 @@
             </fieldset>
 
             <fieldset class="reviews-form__block reviews-form__block--sight">
-              <legend class="reviews-form__title">Посещенные <br> достопримечательности:</legend>
+              <legend class="reviews-form__title reviews-form__title--sight">Посещенные <br> достопримечательности:</legend>
               <ul class="reviews-form__list reviews-form__list--checkbox">
                 <li class="reviews-form__item reviews-form__item--checkbox">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-checkbox" type="checkbox" name="bridge" checked>Мост Дьявола
+                    <input class="reviews-form__inp reviews-form__inp--checkbox" type="checkbox" name="bridge" checked>Мост Дьявола
                     <span class="reviews-form__checkbox"></span>
                   </label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--checkbox">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-checkbox" type="checkbox" name="mountain" checked>Гора-Колокол
+                    <input class="reviews-form__inp reviews-form__inp--checkbox" type="checkbox" name="mountain" checked>Гора–Колокол
                     <span class="reviews-form__checkbox"></span>
                   </label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--checkbox">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-checkbox" type="checkbox" name="park" checked>Слайд-парк
+                    <input class="reviews-form__inp reviews-form__inp--checkbox" type="checkbox" name="park" checked>Слайд–парк
                     <span class="reviews-form__checkbox"></span>
                   </label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--checkbox">
                   <label class="reviews-form__subtitle reviews-form__subtitle--dark">
-                    <input class="reviews-form__inp-checkbox" type="checkbox" name="rocks">Красные скалы
+                    <input class="reviews-form__inp reviews-form__inp--checkbox" type="checkbox" name="rocks">Красные скалы
                     <span class="reviews-form__checkbox"></span>
                   </label>
                 </li>
@@ -184,7 +184,7 @@
 
             <div class="reviews-form__wrap-btn">
               <button class="reviews-form__btn link-blue" type="submit">Отправить отзыв</button>
-              <span class="reviews-form__desc">* — обязательные поля</span>
+              <span class="reviews-form__desc">* – обязательные поля</span>
             </div>
           </form>
         </section>

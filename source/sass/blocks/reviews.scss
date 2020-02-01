@@ -1,9 +1,9 @@
 .reviews {
   margin-bottom: 73px;
+  padding-top: 38px;
 }
 
 .reviews__header {
-  padding-top: 39px;
   text-align: center;
 }
 
@@ -29,8 +29,9 @@
   text-transform: uppercase;
   margin-top: 27px;
   margin-right: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   margin-left: 20px;
+  letter-spacing: 0.1px;
 }
 
 @media (min-width: $tablet-width) {

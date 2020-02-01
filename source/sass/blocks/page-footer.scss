@@ -1,4 +1,8 @@
 @media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 10px;
+  }
+
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;
@@ -11,10 +15,10 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: $desktop-width;
+    margin-top: 11px;
   }
 
   .page-footer__wrap {
-    padding-top: 22px;
     margin-right: 120px;
     margin-left: 120px;
   }

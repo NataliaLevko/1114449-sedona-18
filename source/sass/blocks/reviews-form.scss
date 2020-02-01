@@ -11,10 +11,15 @@
   color: $bg-black;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 18.5px;
   margin-right: 20px;
-  margin-bottom: 23px;
   margin-left: 20px;
+  margin-bottom: 22.5px;
+  padding-top: 17.5px;
+  letter-spacing: 0.2px;
+
+  &--contacts {
+    padding-top: 18.5px;
+  }
 
   &--emotion {
     margin-bottom: 18px;
@@ -23,9 +28,7 @@
 
 .reviews-form__list {
   list-style: none;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
+  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
   width: 280px;
@@ -41,12 +44,17 @@
 
 .reviews-form__item {
   &--text {
-    margin-bottom: 20.5px;
+    margin-bottom: 20px;
     display: flex;
   }
 
   &--number {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+
+    .reviews-form__subtitle--light {
+      padding-left: 22px;
+      margin-bottom: 6.5px;
+    }
   }
 
   &--radio {
@@ -66,11 +74,6 @@
   }
 }
 
-.reviews-form__item--number .reviews-form__subtitle--light {
-  padding-left: 22px;
-  margin-bottom: 6.5px;
-}
-
 .reviews-form__wrap-inp {
   display: flex;
 }
@@ -80,9 +83,7 @@
   border-right: none;
   border-bottom: 1px solid #e5e5e5;
   border-left: none;
-  padding-top: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
   margin-right: 0;
   margin-left: 0;
 
@@ -91,15 +92,7 @@
   }
 
   &--contacts {
-    padding-bottom: 17px;
-  }
-
-  &--impression {
-    padding-bottom: 0;
-  }
-
-  &--sight {
-    padding-bottom: 0;
+    padding-bottom: 16px;
   }
 
   &--emotion {
@@ -138,7 +131,22 @@
   box-sizing: border-box;
   padding-top: 17px;
   padding-bottom: 17px;
-  padding-left: 21px;
+  padding-left: 19px;
+
+  &--text {
+    width: 100%;
+  }
+
+  &--number {
+    padding-top: 17.5px;
+    padding-left: 17px;
+    flex-grow: 1;
+  }
+
+  &--radio,
+  &--checkbox {
+    @include visually-hidden;
+  }
 
   &:hover {
     background-color: #e5e5e5;
@@ -151,16 +159,6 @@
   }
 }
 
-.reviews-form__item--text .reviews-form__inp {
-  width: 100%;
-}
-
-.reviews-form__item--number .reviews-form__inp {
-  border: 4px solid #f2f2f2;
-  box-sizing: border-box;
-  flex-grow: 1;
-}
-
 .reviews-form__inp::placeholder,
 .reviews-form__textarea::placeholder {
   font-family: $basic-font;
@@ -171,25 +169,11 @@
   color: $bg-black;
 }
 
-.reviews-form__inp-radio,
-.reviews-form__inp-checkbox {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  clip-path: inset(100%);
-}
-
-.reviews-form__inp-radio {
+.reviews-form__inp--radio {
   margin-bottom: 23px;
 }
 
-.reviews-form__inp-checkbox {
+.reviews-form__inp--checkbox {
   margin-bottom: 25px;
 }
 
